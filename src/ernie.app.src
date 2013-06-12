@@ -1,0 +1,12 @@
+{application, ernie, [
+    {description, "Ernie Server"},
+    {vsn, "2.5.2"},
+    {modules, []},
+    {registered, []},
+    {mod, {ernie_app, []}},
+    {applications, [kernel, stdlib]},
+    {env, [
+        {port, 9340},
+        {allowed_modules, [ernie_echo]}
+    ]}
+]}.
